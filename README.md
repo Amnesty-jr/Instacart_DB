@@ -37,4 +37,49 @@ Genarally, we have different levels of normalization and each level has differen
    - All Non Key attributes must be fully dependent on candidate key.
 3. Third Normal form
    - Transitive dependecies: No Non-primary column should depend on another non-primary column.
-  
+
+##### Denormalization process
+I created a Table to house my denormalized dataset.The code for creating the table is shown below.
+![](denormalization.png)
+
+Then I imported the data into the table I created using this code;
+![](importing.png)
+
+In order to store the codes before importing them into their various tables later, I denormalize the data by establishing 4 view tables.
+Product view              |         order view
+:------------------------:|:------------------------:
+![](product_view.png)     |   ![](order_view.png)
+
+aisle_view                |       department_view
+:------------------------:|:------------------------:
+![](aisle_view.png)       |   ![](dept_view.png)
+
+I then established 4 tables so I could insert my data into them and finish the normalization process after generating those views.
+Below is the code I wrote to create those tables, I also established my primary key and foreign key in the tables so there can be a relationship between those 4 tables.
+Product table                   |         order table
+:------------------------------:|:---------------------------:
+![](product_table.png)          |   ![](order_table.png)
+
+aisle table                     |       department table
+:------------------------------:|:------------------------------:
+![](aisles_table.png)           |    ![](department_table.png)
+
+Data was then inserted into the tables from the corresponding views I built after creating the tables; below is the code used to insert the data;
+
+Product insert                   |         order insert
+:------------------------------:|:---------------------------:
+![](product_insert.png)          |   ![](order_insert.png)
+
+aisle insert                    |       department insert
+:------------------------------:|:------------------------------:
+![](aisle_insert.png)           |    ![](dept_insert.png)
+___
+
+## DATA MODELLING
+___
+1. The modelling comprises of 4 different tables.
+2. The denormalized table was normalized up to the 3NF.
+3. A **Star Schema** is the end product of normalization.
+
+#### DATA MODEL
+![](ERD_diagram.png)
