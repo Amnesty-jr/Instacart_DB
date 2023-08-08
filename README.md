@@ -83,3 +83,99 @@ ___
 
 #### DATA MODEL
 ![](ERD_diagram.png)
+___
+
+## DATA ANALYSIS
+___
+I used the database to find solutions to issues that stockholders are curious about.
+
+#### BUSINESS PROBLEMS
+___
+**1. On which day(s) of the week are condoms mostly sold?**
+   ### QUERY
+   ![](Q1.png)
+   
+   ### RESULT
+   ![](result_1.png)
+
+   /* INSIGHTS; Based on the data, the days condoms are mostly sold is on monday with a summation of 122 on monday,
+			 this maybe as a result of the weekend that just ended & people try to restock after their 
+			 working hours for the following weekend. */
+
+**2. At what time of the day is condom mostly sold?**
+   ### QUERY
+   ![](Q2.png)
+
+   ### RESULT
+   ![](result_2.png)
+   
+   /* INSIGHTS: It was observed that condoms were mostly sold in the 4pm in the evening,
+			 this is the time people leave their workplace for their respective homes. */
+
+**3. Which aisle/s can I find all Non-Alcholic drinks?**
+   ### QUERY
+   ![](Q3.png)
+   
+   ### RESULT
+   ![](result_3.png)
+
+   /*INSIGHTS: The aisle with the names frozen juice, beers coolers, cream, milk, red wines,
+			and soft drinks is where non-alcoholic beverages can be found. */
+
+**4. What is the top-selling product by revenue, and how much revenue have they generated?**
+   ### QUERY
+   ![](Q4.png)
+
+   ### RESULT
+   ![](result_4.png)
+
+   /* INSIGHTS: According to the money it generated, the best-selling item was "Apple Cinnamon Cheerios Cereal,"
+			 which brought in a total of $1555.00. */
+
+**5. which department has the highest average spend per customer?**
+### QUERY
+![](Q5.png)
+
+### RESULT
+![](result_5.png)
+
+/* INSIGHTS: International has an average spend per customer of $37.00, which is the highest department. */
+
+**6. Which product generated more profit?**
+   ### QUERY
+   ![](Q6.png)
+
+   ### RESULT
+   ![](result_6.png)
+
+   /* INSIGHTS: Nesquik Double Chocolate, which had a total profit of $573.30, brought in more money. */
+
+**7. What are the 3 aisles with the most orders, and which departments do these orders belong to**
+   ### QUERY
+   ![](Q7.png)
+
+   ### RESULT
+   ![](result_7.png)
+
+   /* INSIGHTS: The aisles with the most orders are missing, candy chocolate, & ice cream ice asile */
+
+**8. Which 3 users generated the highest revenue and how many aisles did they order from?**
+### QUERY
+![](Q8.png)
+
+### RESULT
+![](result_8.png)
+
+/* INSGHTS: The customers who bought from the candy chocolate aisles and the hair care
+			aisles correspondingly brought in the most money for the business. */
+
+**9. What is the average number of orders placed by days of the week?**
+### QUERY
+![](Q9.png)
+
+### RESULT
+![](result_9.png)
+
+/* INSIGHTS: Due to Sunday being a weekend day and the fact that most individuals try to equip their 
+			 homes for the coming week, Sunday has the highest average amount of orders placed by day 
+			 of the week (183939.00). */
